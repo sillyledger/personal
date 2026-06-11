@@ -2,24 +2,21 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative pt-10 pb-0">
+    <section className="relative pt-10 pb-0 max-w-[860px]">
 
-      {/* Since label top right */}
       <span className="absolute top-12 right-0 text-[13px] text-stone-400">
         Since 2020
       </span>
 
-      {/* Big headline */}
-      <h1 className="text-[clamp(80px,11vw,148px)] font-extrabold leading-[0.92] tracking-[-0.04em] text-[#111]">
-        Creator
+      <h1 className="text-[clamp(60px,8vw,110px)] font-extrabold leading-[0.92] tracking-[-0.04em] text-[#111]">
+        Creator, Founder,
       </h1>
-      <h2 className="text-[clamp(80px,11vw,148px)] font-extrabold leading-[0.92] tracking-[-0.04em] text-accent mb-16">
-        &amp; Founder.
+      <h2 className="text-[clamp(60px,8vw,110px)] font-extrabold leading-[0.92] tracking-[-0.04em] text-accent mb-16">
+        &amp; Catalyst.
       </h2>
 
-      {/* Below headline: bio left, CTA right — like Aegos Intel */}
       <div className="flex items-start justify-between pb-12 border-b border-stone-300/60">
-        <p className="text-[14px] text-stone-500 leading-relaxed max-w-[420px]">
+        <p className="text-[14px] text-stone-500 leading-relaxed max-w-[380px]">
           Building software companies at the intersection of data and
           intelligence. Founder of Aegos Intel — structured insights for
           operators and analysts.
