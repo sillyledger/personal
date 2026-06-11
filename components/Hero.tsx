@@ -7,8 +7,8 @@ export default function Hero() {
       <h1 className={`${playfair.className} text-[clamp(60px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-[#111]`}>
         Creating is my default.
       </h1>
-      <h2 className={`${playfair.className} text-[clamp(60px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-accent mb-20`}>
-        <em>Building is my obsession.</em>
+      <h2 className={`${playfair.className} text-[clamp(60px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-[#111] mb-20`}>
+        <em><span className="text-accent">Building</span> is my obsession.</em>
       </h2>
       <div className="flex items-center gap-12 pb-16 border-b border-stone-300/60 w-full justify-center">
         <p className="text-[18px] text-stone-700 leading-relaxed max-w-[420px] text-left">
