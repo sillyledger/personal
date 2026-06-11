@@ -11,7 +11,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav>
-      <div className="max-w-[1100px] mx-auto px-16 flex items-center justify-center py-5 relative">
+      <div className="max-w-[860px] mx-auto px-16 flex items-center justify-center py-5 relative">
         <Link href="/" className="text-[17px] font-bold tracking-tight text-[#111] absolute left-16">
           Pieter<span className="text-accent">.</span>
         </Link>
