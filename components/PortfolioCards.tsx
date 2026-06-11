@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 const projects = [
   {
     name: "Sorano",
@@ -34,7 +33,6 @@ const projects = [
     tags: ["Holding", "Investing"],
   },
 ];
-
 export default function PortfolioCards() {
   return (
     <section className="py-16">
@@ -48,7 +46,7 @@ export default function PortfolioCards() {
             href={p.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-[#dddbd6] border border-[#ccc9c4] rounded-[14px] p-6 flex flex-col hover:border-stone-400 transition-colors"
+            className="group bg-[#e8e6e2] border border-[#d8d6d2] rounded-[14px] p-6 flex flex-col hover:border-stone-400 transition-colors"
           >
             <div className="flex items-start justify-between mb-2">
               <div>
@@ -58,7 +56,7 @@ export default function PortfolioCards() {
                 </div>
                 <p className="text-[11px] text-stone-400 mt-0.5">{p.url}</p>
               </div>
-              <div className="w-10 h-10 rounded-[10px] bg-[#cccac5] border border-[#bbb9b4] flex items-center justify-center text-[13px] font-bold text-[#777] flex-shrink-0">
+              <div className="w-10 h-10 rounded-[10px] bg-[#d8d6d2] border border-[#ccc9c4] flex items-center justify-center text-[13px] font-bold text-[#777] flex-shrink-0">
                 {p.initial}
               </div>
             </div>
