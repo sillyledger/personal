@@ -15,7 +15,7 @@ export default function Page() {
       <div className="grid grid-cols-2 gap-16 pb-16 border-b border-stone-300/60">
         <div className="flex flex-col gap-5 text-[18px] text-stone-600 leading-relaxed">
           <p>Born in Asia, raised in Belgium. I write, build, and document the process of doing work that actually means something.</p>
-          <p>After years in business and digital strategy, I stripped things back. Today I focus on writing, content creation, and building companies from first principles. This site is where I think out loud.</p>
+          <p>After years in business and digital strategy, I stripped things back. Today my focus is Ryoka — building a permanent capital company from first principles. Everything else, the writing, the content, the building in public, flows from that.</p>
           <p>You&apos;ll find my writing, a podcast journal, and the occasional project update. If you&apos;re figuring things out in public — you&apos;re in the right place.</p>
         </div>
 
