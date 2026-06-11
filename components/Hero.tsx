@@ -7,15 +7,15 @@ export default function Hero() {
   return (
     <section className="pt-24 pb-0">
 
-      <h1 className={`${playfair.className} text-[clamp(40px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-[#111]`}>
+      <h1 className={`${playfair.className} text-[clamp(50px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-[#111]`}>
         Creating is my default.
       </h1>
-      <h2 className={`${playfair.className} text-[clamp(40px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-accent mb-20`}>
+      <h2 className={`${playfair.className} text-[clamp(50px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-accent mb-20`}>
         <em>Building is my obsession.</em>
       </h2>
 
       <div className="flex items-center gap-12 pb-16 border-b border-stone-300/60">
-        <p className="text-[15px] text-stone-700 leading-relaxed max-w-[420px]">
+        <p className="text-[18px] text-stone-700 leading-relaxed max-w-[420px]">
           Building software companies at the intersection of data and
           intelligence. Founder of Aegos Intel — structured insights for
           operators and analysts.
