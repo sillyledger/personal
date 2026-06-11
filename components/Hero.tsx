@@ -3,7 +3,7 @@ import { Playfair_Display } from "next/font/google";
 const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"], style: ["normal", "italic"] });
 export default function Hero() {
   return (
-    <section className="pt-24 pb-0 flex flex-col items-center text-center">
+    <section className="pt-32 pb-0 flex flex-col items-center text-center">
       <h1 className={`${playfair.className} text-[clamp(50px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-[#111]`}>
         Creating is my default.
       </h1>
