@@ -1,13 +1,16 @@
 import Link from "next/link";
+import { Geist } from "next/font/google";
+
+const geist = Geist({ subsets: ["latin"], weight: ["300", "400"] });
 
 export default function Hero() {
   return (
     <section className="relative pt-10 pb-0">
 
-      <h1 className="text-[clamp(40px,5vw,72px)] font-normal leading-[1.05] tracking-[-0.03em] text-[#111]">
+      <h1 className={`${geist.className} text-[clamp(40px,5vw,72px)] font-light leading-[1.05] tracking-[-0.03em] text-[#111]`}>
         Creating is my default.
       </h1>
-      <h2 className="text-[clamp(40px,5vw,72px)] font-normal leading-[1.05] tracking-[-0.03em] text-accent mb-16 whitespace-nowrap">
+      <h2 className={`${geist.className} text-[clamp(40px,5vw,72px)] font-light leading-[1.05] tracking-[-0.03em] text-accent mb-16 whitespace-nowrap`}>
         Building is my obsession.
       </h2>
 
