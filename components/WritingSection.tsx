@@ -31,42 +31,10 @@ export default function WritingSection() {
   return (
     <section className="py-16">
       {/* Header */}
-      <div className="flex items-baseline justify-between mb-8">
-        <div>
-          <p className="text-[11px] text-stone-400 tracking-[0.09em] uppercase font-medium mb-1">
-            Journal
-          </p>
-          <h2 className="text-[22px] font-semibold text-[#111]">
-            Thinking out loud.
-          </h2>
-        </div>
-        <Link
-          href="/writing"
-          className="flex items-center gap-2 text-[13px] font-medium text-[#555] hover:text-[#111] transition-colors group"
-        >
-          All posts
-          {/* HTML/SVG arrow — renders crisply on all screen sizes */}
-          <span
-            className="flex items-center justify-center w-[22px] h-[22px] rounded-full border border-current flex-shrink-0"
-            aria-hidden="true"
-          >
-            <svg
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 8L8 2M8 2H4M8 2V6"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-        </Link>
+      <div className="mb-8">
+        <p className="text-[11px] text-stone-400 tracking-[0.09em] uppercase font-medium">
+          Journal
+        </p>
       </div>
 
       {/* Post list */}
@@ -113,6 +81,24 @@ export default function WritingSection() {
             </div>
           </Link>
         ))}
+      </div>
+
+      {/* All posts link */}
+      <div className="mt-6">
+        <Link
+          href="/writing"
+          className="flex items-center gap-2 text-[13px] font-medium text-[#555] hover:text-[#111] transition-colors"
+        >
+          All posts
+          <span
+            className="flex items-center justify-center w-[22px] h-[22px] rounded-full border border-current flex-shrink-0"
+            aria-hidden="true"
+          >
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </span>
+        </Link>
       </div>
     </section>
   );
