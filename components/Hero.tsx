@@ -1,21 +1,21 @@
 import Link from "next/link";
-import { Geist } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 
-const geist = Geist({ subsets: ["latin"], weight: ["300", "400"] });
+const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"], style: ["normal", "italic"] });
 
 export default function Hero() {
   return (
-    <section className="relative pt-10 pb-0">
+    <section className="pt-24 pb-0">
 
-      <h1 className={`${geist.className} text-[clamp(40px,5vw,72px)] font-light leading-[1.05] tracking-[-0.03em] text-[#111]`}>
+      <h1 className={`${playfair.className} text-[clamp(40px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-[#111]`}>
         Creating is my default.
       </h1>
-      <h2 className={`${geist.className} text-[clamp(40px,5vw,72px)] font-light leading-[1.05] tracking-[-0.03em] text-accent mb-16 whitespace-nowrap`}>
-        Building is my obsession.
+      <h2 className={`${playfair.className} text-[clamp(40px,5vw,72px)] font-normal leading-[1.1] tracking-[-0.01em] text-accent mb-20`}>
+        <em>Building is my obsession.</em>
       </h2>
 
-      <div className="flex items-start justify-between pb-12 border-b border-stone-300/60">
-        <p className="text-[18px] text-stone-700 leading-relaxed max-w-[380px]">
+      <div className="flex items-center gap-12 pb-16 border-b border-stone-300/60">
+        <p className="text-[15px] text-stone-700 leading-relaxed max-w-[420px]">
           Building software companies at the intersection of data and
           intelligence. Founder of Aegos Intel — structured insights for
           operators and analysts.
