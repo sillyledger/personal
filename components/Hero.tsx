@@ -8,7 +8,7 @@ const socials = [
 
 export default function Hero() {
   return (
-    <section className="relative pt-10 pb-0 min-h-[480px]">
+    <section className="relative pt-10 pb-0">
       {/* Since label */}
       <span className="absolute top-12 right-0 text-[13px] text-stone-400">
         Since 2020
@@ -22,9 +22,8 @@ export default function Hero() {
         &amp; Founder.
       </h2>
 
-      {/* Bottom row */}
+      {/* Bottom row: socials left, bio+CTA right */}
       <div className="flex items-end justify-between pt-12 pb-10">
-        {/* Social links */}
         <ul className="flex flex-col gap-3">
           {socials.map((s) => (
             <li key={s.label}>
@@ -41,17 +40,13 @@ export default function Hero() {
           ))}
         </ul>
 
-        {/* Card */}
+        {/* Bio + CTA — no image */}
         <div className="w-[280px]">
-          {/* Image placeholder — replace with next/image when you have a photo */}
-          <div className="w-full h-[160px] bg-stone-300 rounded-[10px] mb-4" />
-
           <p className="text-[13px] text-stone-500 leading-relaxed mb-4">
             Building software companies at the intersection of data and
             intelligence. Founder of Aegos Intel — structured insights for
             operators and analysts.
           </p>
-
           <Link
             href="/contact"
             className="text-[13px] font-medium text-accent border-b border-accent pb-[2px] inline-flex items-center gap-1 hover:opacity-70 transition-opacity"
