@@ -84,7 +84,7 @@ export default function WritingSection() {
       </div>
 
       {/* All posts link */}
-      <div className="mt-6">
+      <div className="mt-6 flex justify-end">
         <Link
           href="/writing"
           className="flex items-center gap-2 text-[13px] font-medium text-[#555] hover:text-[#111] transition-colors"
