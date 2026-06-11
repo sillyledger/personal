@@ -2,16 +2,16 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative pt-10 pb-0 max-w-[860px]">
+    <section className="relative pt-10 pb-0">
 
       <span className="absolute top-12 right-0 text-[13px] text-stone-400">
         Since 2020
       </span>
 
-      <h1 className="text-[clamp(60px,8vw,110px)] font-extrabold leading-[0.92] tracking-[-0.04em] text-[#111]">
+      <h1 className="text-[clamp(60px,7.5vw,115px)] font-bold leading-[0.92] tracking-[-0.03em] text-[#111] whitespace-nowrap">
         Creator, Founder,
       </h1>
-      <h2 className="text-[clamp(60px,8vw,110px)] font-extrabold leading-[0.92] tracking-[-0.04em] text-accent mb-16">
+      <h2 className="text-[clamp(60px,7.5vw,115px)] font-bold leading-[0.92] tracking-[-0.03em] text-accent mb-16">
         &amp; Catalyst.
       </h2>
 
