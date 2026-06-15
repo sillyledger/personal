@@ -51,7 +51,7 @@ export default async function JournalPage() {
             >
               <div className="flex items-baseline gap-4 flex-1 min-w-0">
                 {post.category && (
-                  <span className="text-[11px] font-semibold tracking-[0.06em] uppercase text-stone-400 whitespace-nowrap w-[72px] flex-shrink-0">
+                  <span className="text-[11px] font-semibold tracking-[0.06em] uppercase text-stone-400 whitespace-nowrap w-[120px] flex-shrink-0">
                     {post.category}
                   </span>
                 )}
