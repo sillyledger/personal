@@ -12,13 +12,14 @@ const supabase = createClient(
 export default async function JournalPostPage({
   params,
 }: {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }) {
+  const { slug } = await params
   const { data: post } = await supabase
     .from('posts')
     .select('*')
     .eq('target_site', 'pieter.tw')
-    .eq('slug', params.slug)
+    .eq('slug', slug)
     .eq('status', 'published')
     .single()
 
