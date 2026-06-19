@@ -67,7 +67,8 @@ export default async function JournalPostPage({
         .journal-content p { margin-bottom: 20px; }
         .journal-content h2 { font-size: 22px; font-weight: 700; color: #111; margin: 40px 0 14px; letter-spacing: -0.02em; }
         .journal-content h3 { font-size: 18px; font-weight: 600; color: #111; margin: 32px 0 10px; }
-        .journal-content ul, .journal-content ol { padding-left: 20px; margin-bottom: 20px; }
+        .journal-content ul { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+.journal-content ol { list-style: decimal; padding-left: 20px; margin-bottom: 20px; }
         .journal-content li { margin-bottom: 8px; }
         .journal-content strong { color: #111; font-weight: 600; }
         .journal-content a { color: #252525; text-decoration: underline; text-decoration-color: rgba(0,0,0,0.3); text-underline-offset: 3px; }
