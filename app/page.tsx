@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import ServicesBar from "@/components/ServicesBar";
 import PortfolioCards from "@/components/PortfolioCards";
-import WritingSection from "@/components/WritingSection";
 
 export default function Home() {
   return (
