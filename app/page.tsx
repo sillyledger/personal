@@ -8,7 +8,6 @@ export default function Home() {
       <Hero />
       <ServicesBar />
       <PortfolioCards />
-      <WritingSection />
     </main>
   );
 }
