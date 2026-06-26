@@ -3,8 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Pieter — Creator & Founder",
-  description: "Building software companies at the intersection of data and intelligence.",
+  title: "Pieter Borremans | Content Creator & Founder",
+  description: "I am a content creator, blogger, and entrepreneur with an occasional experiment.",
 };
 
 export default function RootLayout({
