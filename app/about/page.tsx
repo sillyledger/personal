@@ -6,11 +6,23 @@ export default function Page() {
     <main className="max-w-[860px] mx-auto px-16">
 
       <div className="pt-20 pb-14">
-        <p className="text-[11px] text-stone-400 tracking-[0.1em] uppercase font-medium mb-5">About</p>
-        <h1 className={`${playfair.className} text-[64px] font-normal leading-[1.05] tracking-[-0.02em] text-[#111]`}>
-          I&apos;m <em className="text-accent">Pieter.</em>
-        </h1>
-      </div>
+  <p className="text-[11px] text-stone-400 tracking-[0.1em] uppercase font-medium mb-5">
+    About
+  </p>
+
+  <h1 className={`${playfair.className} text-[64px] font-normal leading-[1.05] tracking-[-0.02em] text-[#111]`}>
+    I&apos;m{" "}
+    <Link
+      href="https://pieterborremans.com"
+      className="text-accent italic hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Pieter Borremans
+    </Link>
+    .
+  </h1>
+</div>
 
       <div className="max-w-[620px] flex flex-col gap-6 text-[18px] text-stone-600 leading-relaxed">
         <p>Born in Asia, raised in Belgium. I write, build, and document the process of doing work that actually means something.</p>
