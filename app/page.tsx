@@ -1,13 +1,15 @@
 import Hero from "@/components/Hero";
 import ServicesBar from "@/components/ServicesBar";
-import PortfolioCards from "@/components/PortfolioCards";
+import AboutParagraph from "@/components/AboutParagraph";
+import JournalFeed from "@/components/JournalFeed";
 
 export default function Home() {
   return (
-    <main className="max-w-[900px] mx-auto px-16">
+    <main>
       <Hero />
       <ServicesBar />
-      <PortfolioCards />
+      <AboutParagraph />
+      <JournalFeed />
     </main>
   );
 }
