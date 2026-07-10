@@ -8,11 +8,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: "#e8440a",
+        accent: "#C76E00",
         bg: "#f0efed",
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ['"Fira Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
       },
     },
   },
