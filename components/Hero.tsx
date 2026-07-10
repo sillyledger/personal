@@ -1,31 +1,64 @@
-import Link from "next/link";
-
 export default function Hero() {
   return (
-    <section className="pt-44 pb-0 flex flex-col items-center text-center">
-      <div className="flex flex-col items-start gap-8 pb-16 border-b border-stone-300/60 w-full max-w-[820px] mx-auto text-left">
-        <p className="text-[26px] md:text-[30px] leading-[1.5] tracking-[-0.01em] text-stone-800">
-          I am Pieter Borremans, a foreigner in Taiwan who&apos;s been
-          building{" "}
-          <a
-            href="https://www.ryokagroup.com/founder"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity"
+    <section className="max-w-[720px] mx-auto px-10 pt-24 pb-20">
+      <style>{`
+        @keyframes fly-across {
+          0% { left: 4%; }
+          100% { left: 96%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .plane-icon { animation: none !important; }
+        }
+      `}</style>
+
+      <div className="font-mono text-[13px] tracking-wide text-muted uppercase mb-6">
+        Pieter Borremans —{" "}
+        <span className="text-ink normal-case">personal journal</span>
+      </div>
+
+      <h1 className="font-display font-bold text-[clamp(30px,4.6vw,56px)] leading-[1.18] tracking-tight text-ink">
+        Writing my way through a country that isn&apos;t mine.
+      </h1>
+
+      <p className="mt-6 text-[16px] leading-relaxed text-muted">
+        Belgian-raised, Indonesian-born — building Ryoka and writing about
+        Taiwan since 2016.
+      </p>
+
+      <div className="mt-12 pt-7 border-t border-line flex flex-wrap items-center gap-4">
+        <div className="flex items-center gap-2 font-mono text-[13px] tracking-wide text-ink">
+          <span
+            className="inline-block w-[22px] h-[15px] rounded-sm"
+            style={{
+              background:
+                "linear-gradient(90deg, #000 0% 33%, #FDDA24 33% 66%, #EF3340 66% 100%)",
+            }}
+          />
+          BEL
+        </div>
+
+        <div className="flex-1 min-w-[80px] relative h-4 flex items-center">
+          <span className="w-full border-t border-dashed border-ink/35" />
+          <svg
+            className="plane-icon absolute top-1/2 -translate-y-1/2 w-4 h-4 [animation:fly-across_6s_linear_infinite]"
+            viewBox="0 0 24 24"
+            fill="none"
           >
-            Ryoka Group
-          </a>
-          . Almost a decade ago, I moved to Taiwan without speaking a word of
-          Mandarin. This is where I write about the language, the culture,
-          and the version of myself that only shows up when nothing is
-          familiar.
-        </p>
-        <Link
-          href="/journal"
-          className="bg-[#111] text-white text-[13px] font-medium px-6 py-3 rounded-full inline-flex items-center gap-2 hover:opacity-80 transition-opacity whitespace-nowrap"
-        >
-          Read Journal →
-        </Link>
+            <path
+              d="M2 16L22 8L18 16L22 22L14 18L8 22L9 15L2 16Z"
+              fill="#F5F3EE"
+            />
+          </svg>
+        </div>
+
+        <div className="flex items-center gap-2 font-mono text-[13px] tracking-wide text-ink">
+          TPE
+          <span className="inline-block w-[22px] h-[15px] rounded-sm bg-red" />
+        </div>
+
+        <div className="w-full font-mono text-[12px] text-muted mt-1">
+          left Brussels in 2016 — still finding my way around Taichung.
+        </div>
       </div>
     </section>
   );
