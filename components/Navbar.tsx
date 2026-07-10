@@ -1,29 +1,26 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 const links = [
-  { href: "/journal", label: "Journal" },
-  { href: "/about", label: "About" },
+  { href: "/", label: "HOME" },
+  { href: "/portfolio", label: "PORTFOLIO" },
+  { href: "/about", label: "ABOUT" },
 ];
-
 export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav>
-      <div className="max-w-[620px] mx-auto flex items-center justify-between pt-11 px-6">
-        <Link href="/" className="text-[14px] tracking-tight text-[#252525]">
-          // pieter.tw
+      <div className="max-w-[900px] mx-auto px-16 flex items-center justify-center py-5 relative">
+        <Link href="/" className="text-[17px] font-bold tracking-tight text-[#111] absolute left-16">
+          Pieter<span className="text-accent">.</span>
         </Link>
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-10">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`text-[13px] font-medium tracking-wide uppercase transition-colors ${
-                pathname === link.href
-                  ? "text-[#252525]"
-                  : "text-[#8E8A84] hover:text-[#252525]"
+              className={`text-[14px] font-medium tracking-wider transition-colors ${
+                pathname === link.href ? "text-accent" : "text-stone-600 hover:text-[#111]"
               }`}
             >
               {link.label}

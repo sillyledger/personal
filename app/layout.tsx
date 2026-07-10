@@ -1,25 +1,10 @@
 import type { Metadata } from "next";
-import { Figtree, Fira_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-// Figtree = body text font (used for paragraphs, nav, dates, everything except headlines)
-const figtree = Figtree({
-  subsets: ["latin"],
-  variable: "--font-figtree",
-});
-
-// Fira Sans = headline font (used only for big headers like the homepage title)
-const firaSans = Fira_Sans({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-fira-sans",
-});
-
 export const metadata: Metadata = {
   title: "Pieter Borremans | Content Creator & Founder",
-  description:
-    "I am a content creator, blogger, and entrepreneur with an occasional experiment.",
+  description: "I am a content creator, blogger, and entrepreneur with an occasional experiment.",
 };
 
 export default function RootLayout({
@@ -29,9 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${figtree.variable} ${firaSans.variable} bg-[#FFFAFA] text-[#252525] font-[family-name:var(--font-figtree)]`}
-      >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-bg font-sans">
         <Navbar />
         {children}
       </body>
