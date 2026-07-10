@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -30,8 +31,19 @@ export default function Navbar() {
 
   return (
     <header className="flex flex-wrap items-center justify-between gap-4 px-10 pt-8 font-mono text-[12.5px] tracking-wide text-muted">
-      <Link href="/" className="text-ink">
-        <span className="font-medium">Pieter Borremans</span> · Writer &amp; Founder of Ryoka
+      <Link href="/" className="flex items-center gap-3 text-ink">
+        <Image
+          src="/pieter-borremans-living-in-taiwan.jpeg"
+          alt="Pieter Borremans, a foreigner living in Taiwan"
+          width={32}
+          height={32}
+          className="rounded-full object-cover w-8 h-8"
+          priority
+        />
+        <span>
+          <span className="font-medium">Pieter Borremans</span> · Foreigner
+          living in Taiwan
+        </span>
       </Link>
 
       <nav className="flex items-center gap-6 uppercase">
