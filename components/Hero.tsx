@@ -18,8 +18,7 @@ export default function Hero() {
           . Almost a decade ago, I moved to Taiwan without speaking a word of
           Mandarin. This is where I write about the language, the culture,
           and the version of myself that only shows up when nothing is
-          familiar. I am Asian-born, from Indonesia, but raised in Belgium,
-          and eventually landed in London &amp; Taichung.
+          familiar.
         </p>
         <Link
           href="/journal"
