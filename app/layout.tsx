@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Pieter Borremans | Writer & Founder of Ryoka",
+  title: "Pieter Borremans | Foreigner living in Taiwan",
   description: "A foreigner in Taiwan, writing about the language, the culture, and building Ryoka along the way.",
 };
 
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-bg">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -22,7 +22,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-bg text-ink font-sans">
+      <body className="bg-bg text-ink font-sans min-h-screen">
         <Navbar />
         {children}
       </body>
