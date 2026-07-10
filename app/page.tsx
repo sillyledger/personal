@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import ServicesBar from "@/components/ServicesBar";
 import AboutParagraph from "@/components/AboutParagraph";
+import BoardingPassTeaser from "@/components/BoardingPassTeaser";
 import JournalFeed from "@/components/JournalFeed";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <ServicesBar />
       <AboutParagraph />
+      <BoardingPassTeaser />
       <JournalFeed />
     </main>
   );
