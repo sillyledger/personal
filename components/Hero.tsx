@@ -55,7 +55,7 @@ export default function Hero() {
           <span className="inline-block w-[22px] h-[15px] rounded-sm bg-red" />
         </div>
 
-        <div className="w-full font-mono text-[12px] text-muted mt-1">
+        <div className="w-full font-mono text-[13px] text-muted mt-1">
           left Brussels in 2006 — went around the world, stranded in London & Taichung.
         </div>
       </div>
