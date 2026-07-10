@@ -24,7 +24,7 @@ const photos: Photo[] = [
   {
     src: "/pieter-borremans-taichung-coffee-shop.jpeg",
     alt: "Pieter Borremans at a coffee shop in Taichung, Taiwan",
-    caption: "Favorite coffee shop",
+    caption: "My favorite dark mirror shot, no filter",
   },
   {
     src: "/pieter-borremans-in-taiwan-dark-grey-mirror-shot.jpeg",
