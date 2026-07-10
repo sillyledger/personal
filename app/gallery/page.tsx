@@ -23,9 +23,41 @@ const photos: Photo[] = [
   },
 ];
 
+const SITE_URL = "https://pieter.tw";
+
+function GalleryJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    name: "Photo Gallery | Pieter Borremans",
+    description:
+      "Photos from Pieter Borremans' life in Taiwan — unfiltered, one roll at a time.",
+    url: `${SITE_URL}/gallery`,
+    image: photos.map((photo) => ({
+      "@type": "ImageObject",
+      contentUrl: `${SITE_URL}${photo.src}`,
+      description: photo.alt,
+      caption: photo.caption,
+      creator: {
+        "@type": "Person",
+        name: "Pieter Borremans",
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function GalleryPage() {
   return (
     <main className="max-w-[900px] mx-auto px-16 py-24">
+      <GalleryJsonLd />
+
       <div className="flex items-center justify-between mb-6">
         <span className="font-mono text-xs tracking-widest text-[#8A8C94] uppercase">
           Contact sheet · roll 01
