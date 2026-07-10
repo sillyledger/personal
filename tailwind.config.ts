@@ -8,12 +8,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: "#C76E00",
-        bg: "#f0efed",
+        bg: "#14151A",      // page background
+        ink: "#F5F3EE",     // primary text
+        muted: "#8B8D96",   // secondary text
+        line: "#2A2C33",    // hairline dividers
+        accent: "#E8B923",  // gold, from the Belgian flag
+        gold: "#E8B923",
+        red: "#C23B3B",     // from the Taiwan flag
       },
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ['"Fira Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ['"Archivo"', "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ['"IBM Plex Mono"', "ui-monospace", "monospace"],
       },
     },
   },
