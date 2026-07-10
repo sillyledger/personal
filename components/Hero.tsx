@@ -10,20 +10,16 @@ export default function Hero() {
           .plane-icon { animation: none !important; }
         }
       `}</style>
-
       <div className="font-mono text-[13px] tracking-wide text-muted uppercase mb-6">
         Pieter Borremans —{" "}
         <span className="text-ink normal-case">field notes from Taiwan</span>
       </div>
-
       <h1 className="font-display font-bold text-[clamp(30px,4.6vw,56px)] leading-[1.18] tracking-tight text-ink">
         Writing my way through a country that isn&apos;t mine.
       </h1>
-
       <p className="mt-6 text-[16px] leading-relaxed text-muted">
         Belgian-raised, Indonesian-born, building Ryoka and living in Taiwan since 2018.
       </p>
-
       <div className="mt-12 pt-7 border-t border-line flex flex-wrap items-center gap-4">
         <div className="flex items-center gap-2 font-mono text-[13px] tracking-wide text-ink">
           <span
@@ -35,7 +31,6 @@ export default function Hero() {
           />
           BEL
         </div>
-
         <div className="flex-1 min-w-[80px] relative h-4 flex items-center">
           <span className="w-full border-t border-dashed border-ink/35" />
           <svg
@@ -49,12 +44,13 @@ export default function Hero() {
             />
           </svg>
         </div>
-
         <div className="flex items-center gap-2 font-mono text-[13px] tracking-wide text-ink">
           TPE
-          <span className="inline-block w-[22px] h-[15px] rounded-sm bg-red" />
+          <span className="relative inline-block w-[22px] h-[15px] rounded-sm bg-red overflow-hidden">
+            <span className="absolute top-0 left-0 w-[55%] h-[55%] bg-[#000095]" />
+            <span className="absolute top-[16%] left-[20%] w-[4px] h-[4px] rounded-full bg-white" />
+          </span>
         </div>
-
         <div className="w-full font-mono text-[13px] text-muted mt-1">
           left Brussels in 2006 — went around the world, stranded in London & Taichung.
         </div>
