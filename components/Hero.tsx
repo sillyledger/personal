@@ -21,8 +21,7 @@ export default function Hero() {
       </h1>
 
       <p className="mt-6 text-[16px] leading-relaxed text-muted">
-        Belgian-raised, Indonesian-born — building Ryoka and writing about
-        Taiwan since 2016.
+        Belgian-raised, Indonesian-born, building Ryoka and living in Taiwan since 2018.
       </p>
 
       <div className="mt-12 pt-7 border-t border-line flex flex-wrap items-center gap-4">
@@ -57,7 +56,7 @@ export default function Hero() {
         </div>
 
         <div className="w-full font-mono text-[12px] text-muted mt-1">
-          left Brussels in 2016 — still finding my way around Taichung.
+          left Brussels in 2006 — went around the world, stranded in London & Taichung.
         </div>
       </div>
     </section>
