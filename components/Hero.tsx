@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="pt-44 pb-0 flex flex-col items-center text-center">
       <div className="flex flex-col items-start gap-8 pb-16 border-b border-stone-300/60 w-full max-w-[820px] mx-auto text-left">
-        <p className="text-[28px] md:text-[34px] leading-[1.5] tracking-[-0.01em] text-stone-800">
+        <p className="text-[26px] md:text-[30px] leading-[1.5] tracking-[-0.01em] text-stone-800">
           I am Pieter Borremans, a foreigner in Taiwan who&apos;s been
           building{" "}
           <a
