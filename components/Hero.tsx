@@ -13,7 +13,7 @@ export default function Hero() {
 
       <div className="font-mono text-[13px] tracking-wide text-muted uppercase mb-6">
         Pieter Borremans —{" "}
-        <span className="text-ink normal-case">personal journal</span>
+        <span className="text-ink normal-case">field notes from Taiwan</span>
       </div>
 
       <h1 className="font-display font-bold text-[clamp(30px,4.6vw,56px)] leading-[1.18] tracking-tight text-ink">
