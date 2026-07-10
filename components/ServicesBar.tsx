@@ -1,16 +1,11 @@
-const services = [
-  "Content Creation",
-  "SaaS & Software",
-  "Podcast",
-  "Investing & Building",
-];
+const topics = ["Language", "Discovery", "Food & Culture", "Building Ryoka"];
 
 export default function ServicesBar() {
   return (
-    <div className="flex items-center justify-between py-5">
-      {services.map((service) => (
-        <div key={service} className="flex items-center gap-3 text-[13px] text-stone-400">
-          {service}
+    <div className="max-w-[720px] mx-auto px-10 flex flex-wrap items-center justify-between gap-y-3 py-5 font-mono text-[13px] text-muted">
+      {topics.map((topic) => (
+        <div key={topic} className="flex items-center gap-3">
+          {topic}
           <span className="w-[6px] h-[6px] bg-accent rounded-[1px]" />
         </div>
       ))}
