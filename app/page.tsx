@@ -9,8 +9,8 @@ export default function Home() {
     <main>
       <Hero />
       <ServicesBar />
-      <AboutParagraph />
       <BoardingPassTeaser />
+      <AboutParagraph />
       <JournalFeed />
     </main>
   );
