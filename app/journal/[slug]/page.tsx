@@ -28,12 +28,15 @@ async function getPost(slug: string): Promise<Post | null> {
   return data;
 }
 
+type Params = Promise<{ slug: string }>;
+
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Params;
 }): Promise<Metadata> {
-  const post = await getPost(params.slug);
+  const { slug } = await params;
+  const post = await getPost(slug);
   if (!post) return {};
 
   return {
@@ -54,9 +57,10 @@ function formatDate(dateStr: string | null) {
 export default async function JournalPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Params;
 }) {
-  const post = await getPost(params.slug);
+  const { slug } = await params;
+  const post = await getPost(slug);
   if (!post) notFound();
 
   return (
