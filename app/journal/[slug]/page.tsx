@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { supabase } from "@/lib/supabase";
 
+export const dynamic = "force-dynamic";
+
+
 type Post = {
   title: string;
   slug: string;
