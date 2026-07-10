@@ -21,6 +21,21 @@ const photos: Photo[] = [
     alt: "Pieter Borremans, founder of Ryoka, living in Taichung, Taiwan",
     caption: "Where it all starts.",
   },
+  {
+    src: "/pieter-borremans-taichung-coffee-shop.jpeg",
+    alt: "Pieter Borremans at a coffee shop in Taichung, Taiwan",
+    caption: "Favorite coffee shop",
+  },
+  {
+    src: "/pieter-borremans-in-taiwan-dark-grey-mirror-shot.jpeg",
+    alt: "Pieter Borremans, mirror photo, Taiwan",
+    caption: "Mirror shot, no filter",
+  },
+  {
+    src: "/pieter-borremans-poker-night-taipei.jpeg",
+    alt: "Pieter Borremans playing poker in Taipei, Taiwan",
+    caption: "Asian Poker Tour Taipei",
+  },
 ];
 
 const SITE_URL = "https://pieter.tw";
