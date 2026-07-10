@@ -6,8 +6,8 @@ export default function Hero() {
       <h1 className="font-display text-[clamp(60px,5vw,72px)] font-semibold leading-[1.1] tracking-[-0.01em] text-[#111] mb-20">
         A foreigner in Taiwan, <span className="text-accent">building</span> anyway.
       </h1>
-      <div className="flex items-center gap-12 pb-16 border-b border-stone-300/60 w-full justify-center">
-        <p className="text-[18px] text-stone-700 leading-relaxed max-w-[420px] text-left">
+      <div className="flex flex-col items-start gap-8 pb-16 border-b border-stone-300/60 w-full max-w-[640px] mx-auto text-left">
+        <p className="text-[18px] text-stone-700 leading-relaxed">
           I am Pieter Borremans. Almost a decade ago, I moved to Taiwan without
           speaking a word of Mandarin. This is where I write about the
           language, the culture, and the version of myself that only shows up
