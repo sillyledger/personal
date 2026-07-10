@@ -30,14 +30,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="flex flex-wrap items-center justify-between gap-4 px-10 pt-8 font-mono text-[12.5px] tracking-wide text-muted">
-      <Link href="/" className="flex items-center gap-3 text-ink">
+    <header className="flex flex-wrap items-center justify-between gap-4 px-10 pt-8 font-mono text-[14px] tracking-wide text-muted">
+      <Link href="/" className="flex items-center gap-3.5 text-ink">
         <Image
           src="/pieter-borremans-living-in-taiwan.jpeg"
           alt="Pieter Borremans, a foreigner living in Taiwan"
-          width={32}
-          height={32}
-          className="rounded-full object-cover w-8 h-8"
+          width={40}
+          height={40}
+          className="rounded-full object-cover w-10 h-10"
           priority
         />
         <span>
