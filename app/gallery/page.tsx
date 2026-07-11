@@ -44,7 +44,7 @@ export default function GalleryPage() {
       <GalleryJsonLd />
       <div className="flex items-center justify-between mb-6">
         <span className="font-mono text-xs tracking-widest text-[#8A8C94] uppercase">
-          Contact sheet · roll 01
+          the roll · unedited
         </span>
         <span className="font-mono text-xs text-[#8A8C94]">
           {photos.length} / 36 EXP
