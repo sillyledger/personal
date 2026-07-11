@@ -5,6 +5,8 @@ import AboutParagraph from "@/components/AboutParagraph";
 import PhotoStrip from "@/components/PhotoStrip";
 import JournalFeed from "@/components/JournalFeed";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main>
