@@ -55,9 +55,9 @@ export default function AboutPage() {
         </p>
         <p className="text-[17px] leading-relaxed text-ink">
           After years in business and digital strategy, I stripped things
-          back. Today my focus is <strong className="font-medium">Ryoka</strong> — building
-          a permanent capital company from first principles. Everything else
-          — the writing, the content, the building in public — flows from
+          back. Today my focus is <strong className="font-medium">Ryoka</strong>, building
+          a venture studio that operates software product. Everything else,
+          the writing, the content, the building in public, flows from
           that.
         </p>
         <p className="text-[17px] leading-relaxed text-ink">
