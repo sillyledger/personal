@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import ServicesBar from "@/components/ServicesBar";
 import BoardingPassTeaser from "@/components/BoardingPassTeaser";
 import AboutParagraph from "@/components/AboutParagraph";
+import PhotoStrip from "@/components/PhotoStrip";
 import JournalFeed from "@/components/JournalFeed";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <ServicesBar />
       <BoardingPassTeaser />
       <AboutParagraph />
+      <PhotoStrip />
       <JournalFeed />
     </main>
   );
