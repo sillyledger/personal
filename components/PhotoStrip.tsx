@@ -9,7 +9,7 @@ export default function PhotoStrip() {
     <section className="max-w-[900px] mx-auto px-16 py-16">
       <div className="flex items-center justify-between mb-6">
         <span className="font-mono text-xs tracking-widest text-[#8A8C94] uppercase">
-          Contact sheet
+          the roll · unedited
         </span>
         <Link
           href="/gallery"
