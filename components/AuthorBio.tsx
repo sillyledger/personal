@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const links = [
   { label: "YouTube", href: "https://youtube.com/@Pieterborremans" },
-  { label: "Pinterest", href: "https://pinterest.com/pieterborremans" },
+  { label: "Pinterest", href: "https://www.pinterest.com/borremanspieter/" },
   {
     label: "Spotify",
     href: "https://open.spotify.com/show/765k4LuyZrS2sYEkXHOZ47",
