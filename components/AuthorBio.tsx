@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const links = [
   { label: "YouTube", href: "https://youtube.com/@Pieterborremans" },
-  { label: "Pinterest", href: "https://www.pinterest.com/borremanspieter/" },
+  { label: "Pinterest", href: "https://pinterest.com/borremanspieter" },
   {
     label: "Spotify",
     href: "https://open.spotify.com/show/765k4LuyZrS2sYEkXHOZ47",
@@ -33,9 +33,10 @@ export default function AuthorBio() {
           </div>
 
           <p className="text-[15px] leading-relaxed text-muted">
-            Writer, founder, and podcaster living in Taichung, Taiwan since
-            2018. Documenting life as a foreigner here, unfiltered, on this
-            journal.
+            Pieter Borremans is a writer, content creator, and founder based
+            in Taichung, Taiwan and London, UK. He writes about
+            entrepreneurship, independent business-building, and the
+            unfiltered reality of creating things online.
           </p>
 
           <div className="flex flex-wrap mt-4 pt-3 border-t border-line">
