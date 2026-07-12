@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { supabase } from "@/lib/supabase";
+import AuthorBio from "@/components/AuthorBio";
 
 export const dynamic = "force-dynamic";
 
@@ -93,6 +94,8 @@ export default async function JournalPostPage({
         className="prose-journal mt-10 text-[17px] leading-relaxed text-ink"
         dangerouslySetInnerHTML={{ __html: post.content || "" }}
       />
+
+      <AuthorBio />
 
       <style>{`
         .prose-journal p { margin-bottom: 1.4em; }
