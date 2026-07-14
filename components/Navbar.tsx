@@ -41,11 +41,10 @@ export default function Navbar() {
           className="rounded-full object-cover w-10 h-10"
           priority
         />
-        <span>
-         <span className="uppercase text-[12px]">
-  <span className="font-medium">Pieter Borremans</span> · Foreigner
-  living in Taiwan
-</span>
+        <span className="uppercase text-[12px]">
+          <span className="font-medium">Pieter Borremans</span> · Foreigner
+          living in Taiwan
+        </span>
       </Link>
 
       <nav className="flex items-center gap-6 uppercase">
