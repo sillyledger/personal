@@ -42,9 +42,7 @@ export default function Navbar() {
           priority
         />
         <span className="uppercase text-[12px]">
-          <span className="font-medium">Pieter Borremans</span> · Foreigner
-          living in Taiwan
-        </span>
+          <span className="font-medium">Pieter Borremans</span>
       </Link>
 
       <nav className="flex items-center gap-6 uppercase">
