@@ -10,9 +10,8 @@ export default function Hero() {
           .plane-icon { animation: none !important; }
         }
       `}</style>
-      <div className="font-mono text-[13px] tracking-wide text-muted uppercase mb-6">
-        Pieter Borremans —{" "}
-        <span className="text-ink normal-case">field notes from Taiwan</span>
+      <div className="font-mono text-[13px] tracking-wide text-ink uppercase mb-6">
+        field notes from Taiwan
       </div>
       <h1 className="font-display font-bold text-[clamp(30px,4.6vw,56px)] leading-[1.18] tracking-tight text-ink">
         Writing my way through a country that isn&apos;t mine.
@@ -20,7 +19,7 @@ export default function Hero() {
       <p className="mt-6 text-[16px] leading-relaxed text-muted">
         Belgian-raised, Indonesian-born, building Ryoka and living in Taiwan since 2018.
       </p>
-      <div className="mt-12 pt-7 border-t border-line flex flex-wrap items-center gap-4">
+      <div className="mt-12 flex flex-wrap items-center gap-4">
         <div className="flex items-center gap-2 font-mono text-[13px] tracking-wide text-ink">
           <span
             className="inline-block w-[22px] h-[15px] rounded-sm"
@@ -40,7 +39,7 @@ export default function Hero() {
           >
             <path
               d="M2 16L22 8L18 16L22 22L14 18L8 22L9 15L2 16Z"
-              fill="#F5F3EE"
+              fill="#17171A"
             />
           </svg>
         </div>
