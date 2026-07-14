@@ -10,7 +10,7 @@ export default function AboutPage() {
           width: 22px;
           height: 22px;
           border-radius: 50%;
-          background: #14151A;
+          background: #F6F4EE;
         }
         .pass-stub::before { top: -11px; }
         .pass-stub::after { bottom: -11px; }
