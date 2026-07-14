@@ -48,20 +48,20 @@ export default function AboutPage() {
       </div>
 
       <div className="mt-6 space-y-5 max-w-[600px]">
-        <p className="text-[17px] leading-relaxed text-ink">
+        <p className="text-body text-ink">
           <strong className="font-medium">I&apos;m Pieter Borremans</strong> —
           writer, digital entrepreneur, and software founder. Born in
           Indonesia, raised in Belgium, and spent the years after collecting
           passport stamps before landing, for now, in Taichung, Taiwan.
         </p>
-        <p className="text-[17px] leading-relaxed text-ink">
+        <p className="text-body text-ink">
           After years in business and digital strategy, I stripped things
           back. Today my focus is <strong className="font-medium">Ryoka Group</strong>,
           which builds, operates, and grows software products. Everything
           else, the writing, the content, the building in public, flows
           from that.
         </p>
-        <p className="text-[17px] leading-relaxed text-ink">
+        <p className="text-body text-ink">
           This site is the in-between: the language I&apos;m still learning,
           the culture I&apos;m still adjusting to, and the version of myself
           that only shows up when nothing is familiar.

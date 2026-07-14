@@ -45,7 +45,7 @@ export default async function JournalPage() {
       <h1 className="font-display font-bold text-[clamp(30px,4.6vw,48px)] leading-[1.2] tracking-tight text-ink">
         Field notes from Taiwan.
       </h1>
-      <p className="mt-[18px] text-[16px] leading-relaxed text-muted max-w-[560px]">
+      <p className="mt-[18px] text-body text-muted max-w-[560px]">
         Everything I&apos;ve written since landing here. The language, the
         culture, the day-to-day of being a foreigner in Taiwan.
       </p>

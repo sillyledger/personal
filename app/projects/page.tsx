@@ -43,7 +43,7 @@ export default function ProjectsPage() {
       <h1 className="font-display font-bold text-[clamp(30px,4.6vw,48px)] leading-[1.22] tracking-tight text-ink max-w-[640px]">
         Everything I&apos;ve built, launched, or crashed into along the way.
       </h1>
-      <p className="mt-[18px] text-[16px] leading-relaxed text-muted max-w-[560px]">
+      <p className="mt-[18px] text-body text-muted max-w-[560px]">
         Some are held for the long run. Others were experiments to test
         what&apos;s worth building next. Status updates as things move.
       </p>

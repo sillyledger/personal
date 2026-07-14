@@ -1,7 +1,7 @@
 export default function AboutParagraph() {
   return (
     <section className="max-w-[720px] mx-auto px-10 pb-16 space-y-4">
-      <p className="text-[17px] leading-relaxed text-ink">
+      <p className="text-body text-ink">
         I am Pieter Borremans, a foreigner in Taiwan who&apos;s been building{" "}
         <a
           href="https://www.ryokagroup.com/founder"
@@ -15,7 +15,7 @@ export default function AboutParagraph() {
         Mandarin. This is where I write about the language, the culture, and
         the version of myself that only shows up when nothing is familiar.
       </p>
-      <p className="text-[17px] leading-relaxed text-ink">
+      <p className="text-body text-ink">
         If you&apos;re here for the building side of things instead — the
         projects, the progress, the day-to-day — that lives on{" "}
         <a

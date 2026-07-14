@@ -21,6 +21,9 @@ const config: Config = {
         display: ['"Archivo"', "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ['"IBM Plex Mono"', "ui-monospace", "monospace"],
       },
+      fontSize: {
+        body: ["20px", { lineHeight: "29px" }],
+      },
     },
   },
   plugins: [],

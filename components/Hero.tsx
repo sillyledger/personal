@@ -16,7 +16,7 @@ export default function Hero() {
       <h1 className="font-display font-bold text-[clamp(30px,4.6vw,56px)] leading-[1.18] tracking-tight text-ink">
         Writing my way through a country that isn&apos;t mine.
       </h1>
-      <p className="mt-6 text-[16px] leading-relaxed text-muted">
+      <p className="mt-6 text-body text-muted">
         Belgian-raised, Indonesian-born, building Ryoka and living in Taiwan since 2018.
       </p>
       <div className="mt-12 flex flex-wrap items-center gap-4">
