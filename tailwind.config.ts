@@ -10,7 +10,7 @@ const config: Config = {
       colors: {
         bg: "#F6F4EE",      // page background — cream
         ink: "#17171A",     // primary text — near-black
-        muted: "#6B6B66",   // secondary text
+        muted: "#5C5B54",   // secondary text — darkened for legibility on cream
         line: "#E4E1D8",    // hairline dividers, light
         accent: "#B8873A",  // muted amber gold
         gold: "#B8873A",
