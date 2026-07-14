@@ -8,13 +8,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#14151A",      // page background
-        ink: "#F5F3EE",     // primary text
-        muted: "#8B8D96",   // secondary text
-        line: "#2A2C33",    // hairline dividers
-        accent: "#E8B923",  // gold, from the Belgian flag
-        gold: "#E8B923",
-        red: "#C23B3B",     // from the Taiwan flag
+        bg: "#F6F4EE",      // page background — cream
+        ink: "#17171A",     // primary text — near-black
+        muted: "#6B6B66",   // secondary text
+        line: "#E4E1D8",    // hairline dividers, light
+        accent: "#B8873A",  // muted amber gold
+        gold: "#B8873A",
+        red: "#C23B3B",     // from the Taiwan flag, unchanged
       },
       fontFamily: {
         sans: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
