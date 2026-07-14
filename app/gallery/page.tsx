@@ -43,14 +43,14 @@ export default function GalleryPage() {
     <main className="max-w-[900px] mx-auto px-16 py-24">
       <GalleryJsonLd />
       <div className="flex items-center justify-between mb-6">
-        <span className="font-mono text-xs tracking-widest text-[#8A8C94] uppercase">
+        <span className="font-mono text-xs tracking-widest text-muted uppercase">
           the roll · unedited
         </span>
-        <span className="font-mono text-xs text-[#8A8C94]">
+        <span className="font-mono text-xs text-muted">
           {photos.length} / 36 EXP
         </span>
       </div>
-      <h1 className="font-semibold text-3xl text-[#F2F1ED] mb-12 leading-tight">
+      <h1 className="font-semibold text-3xl text-ink mb-12 leading-tight">
         Nine stops,
         <br />
         unfiltered.
@@ -63,7 +63,7 @@ export default function GalleryPage() {
               i % 2 === 0 ? "rotate-[-1.2deg]" : "rotate-[1deg]"
             } hover:rotate-0 transition-transform duration-200`}
           >
-            <div className="relative aspect-square overflow-hidden rounded-sm border border-white/10">
+            <div className="relative aspect-square overflow-hidden rounded-sm border border-line">
               <Image
                 src={photo.src}
                 alt={photo.alt}
@@ -72,14 +72,14 @@ export default function GalleryPage() {
                 sizes="(max-width: 768px) 33vw, 280px"
               />
             </div>
-            <figcaption className="font-mono text-[10px] text-[#8A8C94] leading-snug">
+            <figcaption className="font-mono text-[10px] text-muted leading-snug">
               {photo.caption}
             </figcaption>
           </figure>
         ))}
       </div>
-      <div className="flex items-center justify-between mt-12 pt-6 border-t border-white/10">
-        <span className="font-mono text-xs text-[#8A8C94]">
+      <div className="flex items-center justify-between mt-12 pt-6 border-t border-line">
+        <span className="font-mono text-xs text-muted">
           BEL → TPE · 2018–2026
         </span>
         <span className="font-mono text-xs text-[#C23B3B]">
