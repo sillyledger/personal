@@ -31,7 +31,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="flex flex-wrap items-center justify-between gap-4 px-10 pt-8 font-mono text-[14px] tracking-wide text-muted">
+    <header className="flex flex-wrap items-center justify-between gap-4 px-10 pt-8 font-mono text-[14px] font-medium tracking-wide text-[#44443F]">
       <Link href="/" className="flex items-center gap-3.5 text-ink">
         <Image
           src="/pieter-borremans-living-in-taiwan.jpeg"
@@ -41,8 +41,9 @@ export default function Navbar() {
           className="rounded-full object-cover w-10 h-10"
           priority
         />
-        <span className="uppercase text-[12px]">
-          <span className="font-medium">Pieter Borremans</span>
+        <span className="uppercase text-[12px] font-medium">
+          Pieter Borremans
+        </span>
       </Link>
 
       <nav className="flex items-center gap-6 uppercase">
