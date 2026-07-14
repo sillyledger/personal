@@ -17,6 +17,30 @@ type Post = {
   published_at: string | null;
 };
 
+// A Ryoka OS editor bug used to force target="_blank" onto every link,
+// including internal ones. This strips target/rel from links that point
+// back to our own sites so internal links open in the same tab. External
+// links are left untouched.
+function fixInternalLinkTargets(html: string): string {
+  return html.replace(/<a\s+([^>]*)>/gi, (match, attrs) => {
+    const hrefMatch = attrs.match(/href\s*=\s*["']([^"']*)["']/i);
+    const href = hrefMatch?.[1] ?? "";
+    const isInternal =
+      href.startsWith("/") ||
+      href.startsWith("#") ||
+      /^https?:\/\/(www\.)?(pieterborremans\.com|pieter\.tw)/i.test(href);
+
+    if (!isInternal) return match;
+
+    const cleanedAttrs = attrs
+      .replace(/\s*target\s*=\s*["'][^"']*["']/i, "")
+      .replace(/\s*rel\s*=\s*["'][^"']*["']/i, "")
+      .trim();
+
+    return cleanedAttrs ? `<a ${cleanedAttrs}>` : "<a>";
+  });
+}
+
 async function getPost(slug: string): Promise<Post | null> {
   const { data, error } = await supabase
     .from("posts")
@@ -29,7 +53,7 @@ async function getPost(slug: string): Promise<Post | null> {
     .single();
 
   if (error || !data) return null;
-  return data;
+  return { ...data, content: fixInternalLinkTargets(data.content || "") };
 }
 
 type Params = Promise<{ slug: string }>;
