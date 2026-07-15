@@ -6,7 +6,7 @@ export default function PhotoStrip() {
   const preview = photos.slice(0, 3);
 
   return (
-    <section className="max-w-[900px] mx-auto px-16 py-16">
+    <section className="max-w-[720px] mx-auto px-16 py-16">
       <div className="flex items-center justify-between mb-6">
         <span className="text-xs font-medium tracking-widest text-muted uppercase">
           the roll · unedited
