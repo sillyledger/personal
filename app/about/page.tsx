@@ -119,9 +119,7 @@ export default function AboutPage() {
               Say hello
             </div>
             
-              href="mailto:hi@pieter.tw"
-              className="text-[15px] mt-1 inline-block text-accent underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity"
-            >
+              <a href="mailto:hi@pieter.tw" className="text-[15px] mt-1 inline-block text-accent underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity">
               hi@pieter.tw
             </a>
           </div>
