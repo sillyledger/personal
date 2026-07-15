@@ -8,8 +8,11 @@ export default function AboutParagraph() {
         is familiar.
       </p>
       <p className="text-body text-ink">
-        If you&apos;re here for the building side of things instead — the
-        projects, the progress, the day-to-day — that lives on{" "}
+        If you&apos;re here for the building side of things instead
+        {" — "}
+        the projects, the progress, the day-to-day
+        {" — "}
+        that lives on{" "}
         
           href="https://pieterborremans.com"
           target="_blank"
