@@ -44,7 +44,7 @@ export default async function JournalFeed() {
   if (posts.length === 0) return null;
 
   return (
-    <div className="max-w-[1100px] mx-auto px-10 pb-16">
+    <div className="max-w-[900px] mx-auto px-10 pb-16">
       <div className="text-[13px] font-medium tracking-wide text-muted uppercase mb-5">
         Latest posts
       </div>
