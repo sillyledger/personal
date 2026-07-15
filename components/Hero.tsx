@@ -17,7 +17,7 @@ export default function Hero() {
         Writing my way through a country that isn&apos;t mine.
       </h1>
       <p className="mt-6 text-body text-muted">
-        Belgian-raised, Indonesian-born, somehow calling Taiwan home since 2018.  I moved to this wonderful place without speaking a word of Mandarin.
+        Belgian-raised, Indonesian-born, somehow calling Taiwan home since 2018.  I moved to this wonderful place without speaking a word of Mandarin, and I am still bad at it.
       </p>
       <div className="mt-12 flex flex-wrap items-center gap-4">
         <div className="flex items-center gap-2 font-mono text-[13px] tracking-wide text-ink">
