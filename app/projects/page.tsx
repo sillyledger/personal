@@ -36,7 +36,7 @@ const statusDot: Record<Status, string> = {
 export default function ProjectsPage() {
   return (
     <main className="max-w-[900px] mx-auto px-10 pt-16 pb-24">
-      <div className="font-mono text-[13px] tracking-wide text-muted uppercase mb-5">
+      <div className="text-[13px] font-medium tracking-wide text-muted uppercase mb-5">
         Portfolio
       </div>
 
@@ -48,8 +48,8 @@ export default function ProjectsPage() {
         what&apos;s worth building next. Status updates as things move.
       </p>
 
-      <div className="mt-12 border border-white/10 rounded-[10px] bg-[#1B1C22] overflow-hidden">
-        <div className="flex justify-between items-center px-6 py-4 border-b border-white/10 font-mono text-[11.5px] tracking-wide text-[#8B8D96]">
+      <div className="mt-12 border border-white/10 rounded-[10px] bg-card overflow-hidden">
+        <div className="flex justify-between items-center px-6 py-4 border-b border-white/10 text-[11.5px] font-medium tracking-wide text-faint">
           <span>TAICHUNG DEPARTURES · {projects.length} FLIGHTS</span>
           <span className="flex items-center gap-1.5 text-[#3ECF8E] uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-[#3ECF8E] animate-pulse" />
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
           </span>
         </div>
 
-        <div className="hidden sm:grid grid-cols-[70px_1.6fr_1fr_1fr_70px] px-6 py-3 border-b border-white/10 font-mono text-[10.5px] tracking-wide uppercase text-[#8B8D96]">
+        <div className="hidden sm:grid grid-cols-[70px_1.6fr_1fr_1fr_70px] px-6 py-3 border-b border-white/10 text-[10.5px] font-medium tracking-wide uppercase text-faint">
           <span>Flight</span>
           <span>Destination</span>
           <span>Gate</span>
@@ -72,16 +72,16 @@ export default function ProjectsPage() {
               p.status === "idle" ? "opacity-45" : ""
             }`}
           >
-            <div className="font-mono text-[13px] text-[#F5F3EE]">{p.flightNo}</div>
-            <div className="text-[15px] text-[#F5F3EE]">
+            <div className="text-[13px] font-medium text-ink">{p.flightNo}</div>
+            <div className="text-[15px] text-ink">
               {p.name}
-              <span className="block font-mono text-[10.5px] text-[#8B8D96] mt-0.5">
+              <span className="block text-[10.5px] font-medium text-faint mt-0.5">
                 {p.url}
               </span>
             </div>
-            <div className="font-mono text-[12px] text-[#8B8D96]">{p.gate}</div>
+            <div className="text-[12px] font-medium text-faint">{p.gate}</div>
             <div
-              className={`flex items-center gap-1.5 font-mono text-[11.5px] tracking-wide uppercase ${
+              className={`flex items-center gap-1.5 text-[11.5px] font-medium tracking-wide uppercase ${
                 statusColors[p.status]
               }`}
             >
@@ -92,13 +92,13 @@ export default function ProjectsPage() {
               />
               {p.statusLabel}
             </div>
-            <div className="font-mono text-[12px] text-[#8B8D96] sm:text-right">
+            <div className="text-[12px] font-medium text-faint sm:text-right">
               {p.year}
             </div>
           </div>
         ))}
 
-        <div className="flex justify-between items-center flex-wrap gap-3 px-6 py-4 font-mono text-[10.5px] tracking-wide text-[#8B8D96]">
+        <div className="flex justify-between items-center flex-wrap gap-3 px-6 py-4 text-[10.5px] font-medium tracking-wide text-faint">
           <div className="flex gap-[18px] flex-wrap">
             <span className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#3ECF8E]" />{" "}
@@ -109,7 +109,7 @@ export default function ProjectsPage() {
               in progress
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#8B8D96]" /> Idle /
+              <span className="w-1.5 h-1.5 rounded-full bg-faint" /> Idle /
               not started
             </span>
           </div>

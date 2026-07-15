@@ -6,7 +6,6 @@ import AuthorBio from "@/components/AuthorBio";
 
 export const dynamic = "force-dynamic";
 
-
 type Post = {
   title: string;
   slug: string;
@@ -95,12 +94,12 @@ export default async function JournalPostPage({
     <main className="max-w-[720px] mx-auto px-10 pt-16 pb-24">
       <Link
         href="/journal"
-        className="font-mono text-[13px] text-muted hover:text-accent transition-colors"
+        className="text-[13px] font-medium text-muted hover:text-accent transition-colors"
       >
         ← Journal
       </Link>
 
-      <div className="mt-8 font-mono text-[12px] text-muted flex items-center gap-3">
+      <div className="mt-8 text-[12px] text-muted flex items-center gap-3">
         {formatDate(post.published_at)}
         {post.category && (
           <>
@@ -123,9 +122,9 @@ export default async function JournalPostPage({
 
       <style>{`
         .prose-journal p { margin-bottom: 1.4em; }
-        .prose-journal a { color: #B8873A; text-decoration: underline; text-underline-offset: 3px; }
-        .prose-journal h2 { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 24px; margin: 1.6em 0 0.6em; color: #17171A; }
-        .prose-journal h3 { font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 19px; margin: 1.4em 0 0.5em; color: #17171A; }
+        .prose-journal a { color: #E8B923; text-decoration: underline; text-underline-offset: 3px; }
+        .prose-journal h2 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 24px; margin: 1.6em 0 0.6em; color: #F5F3EE; }
+        .prose-journal h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 19px; margin: 1.4em 0 0.5em; color: #F5F3EE; }
         .prose-journal img { border-radius: 8px; margin: 1.6em 0; max-width: 100%; }
         .prose-journal ul, .prose-journal ol { margin: 0 0 1.4em; padding-left: 1.4em; }
       `}</style>

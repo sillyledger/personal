@@ -8,12 +8,12 @@ export default function PhotoStrip() {
   return (
     <section className="max-w-[900px] mx-auto px-16 py-16">
       <div className="flex items-center justify-between mb-6">
-        <span className="font-mono text-xs tracking-widest text-muted uppercase">
+        <span className="text-xs font-medium tracking-widest text-muted uppercase">
           the roll · unedited
         </span>
         <Link
           href="/gallery"
-          className="font-mono text-xs text-muted hover:text-ink transition-colors"
+          className="text-xs font-medium text-muted hover:text-ink transition-colors"
         >
           See all →
         </Link>
@@ -23,7 +23,7 @@ export default function PhotoStrip() {
         {preview.map((photo, i) => (
           <div
             key={photo.src}
-            className={`relative aspect-square overflow-hidden rounded-sm border border-line ${
+            className={`relative aspect-square overflow-hidden rounded-sm border border-border ${
               i % 2 === 0 ? "rotate-[-1.2deg]" : "rotate-[1deg]"
             } hover:rotate-0 transition-transform duration-200`}
           >

@@ -19,15 +19,15 @@ export default function AuthorBio() {
           alt="Pieter Borremans, a foreigner living in Taiwan"
           width={64}
           height={64}
-          className="flex-shrink-0 rounded-full object-cover w-16 h-16 border border-line"
+          className="flex-shrink-0 rounded-full object-cover w-16 h-16 border border-border"
         />
 
         <div className="min-w-0">
           <div className="flex items-center gap-2.5 mb-2.5">
-            <span className="font-mono text-[11px] tracking-wide uppercase text-gold">
+            <span className="text-[11px] font-medium tracking-wide uppercase text-gold">
               Written by
             </span>
-            <span className="font-display font-semibold text-[19px] text-ink">
+            <span className="font-display font-bold text-[19px] text-ink">
               Pieter ✈ Borremans
             </span>
           </div>
@@ -39,15 +39,15 @@ export default function AuthorBio() {
             unfiltered reality of creating things online.
           </p>
 
-          <div className="flex flex-wrap mt-4 pt-3 border-t border-line">
+          <div className="flex flex-wrap mt-4 pt-3 border-t border-border">
             {links.map((link, i) => (
-              <a
+              
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`font-mono text-[11px] tracking-wide uppercase text-muted hover:text-ink transition-colors px-3.5 first:pl-0 last:pr-0 ${
-                  i < links.length - 1 ? "border-r border-line" : ""
+                className={`text-[11px] font-medium tracking-wide uppercase text-muted hover:text-ink transition-colors px-3.5 first:pl-0 last:pr-0 ${
+                  i < links.length - 1 ? "border-r border-border" : ""
                 }`}
               >
                 {link.label}

@@ -10,7 +10,7 @@ export default function AboutPage() {
           width: 22px;
           height: 22px;
           border-radius: 50%;
-          background: #F6F4EE;
+          background: #14151A;
         }
         .pass-stub::before { top: -11px; }
         .pass-stub::after { bottom: -11px; }
@@ -27,7 +27,7 @@ export default function AboutPage() {
         }
       `}</style>
 
-      <div className="font-mono text-[13px] tracking-wide text-muted uppercase mb-5">
+      <div className="text-[13px] font-medium tracking-wide text-muted uppercase mb-5">
         About
       </div>
 
@@ -37,7 +37,7 @@ export default function AboutPage() {
         </h1>
 
         <div className="hidden sm:flex absolute -top-1.5 right-0 w-24 h-24 rounded-full border border-dashed border-gold/55 items-center justify-center -rotate-[9deg]">
-          <div className="w-[78px] h-[78px] rounded-full border border-gold/40 flex flex-col items-center justify-center text-center font-mono text-gold text-[9.5px] tracking-wide leading-relaxed">
+          <div className="w-[78px] h-[78px] rounded-full border border-gold/40 flex flex-col items-center justify-center text-center text-gold text-[9.5px] font-medium tracking-wide leading-relaxed">
             ENTRY
             <br />
             <strong className="text-[11px]">TAIWAN</strong>
@@ -69,56 +69,56 @@ export default function AboutPage() {
       </div>
 
       {/* ---------- boarding pass ---------- */}
-      <div className="mt-14 flex flex-col sm:flex-row border border-white/10 rounded-[10px] bg-[#1B1C22] overflow-hidden">
+      <div className="mt-14 flex flex-col sm:flex-row border border-white/10 rounded-[10px] bg-card overflow-hidden">
         <div className="flex-1 p-8">
           <div className="mb-5">
-            <div className="font-mono text-[10.5px] tracking-wide uppercase text-[#8B8D96]">
+            <div className="text-[10.5px] font-medium tracking-wide uppercase text-faint">
               Passenger
             </div>
-            <div className="text-[15px] mt-1 text-[#F5F3EE]">Pieter Borremans</div>
+            <div className="text-[15px] mt-1 text-ink">Pieter Borremans</div>
           </div>
 
           <div className="flex items-center gap-3.5 mb-6">
             <div>
-              <div className="font-display font-black text-[26px] tracking-tight text-[#F5F3EE]">
+              <div className="font-display font-bold text-[26px] tracking-tight text-ink">
                 BEL
               </div>
-              <div className="font-mono text-[11px] text-[#8B8D96] mt-0.5">
+              <div className="text-[11px] font-medium text-faint mt-0.5">
                 Brussels
               </div>
             </div>
             <div className="flex-1 h-px border-t border-dashed border-white/30" />
             <div className="text-right">
-              <div className="font-display font-black text-[26px] tracking-tight text-[#F5F3EE]">
+              <div className="font-display font-bold text-[26px] tracking-tight text-ink">
                 TPE
               </div>
-              <div className="font-mono text-[11px] text-[#8B8D96] mt-0.5">
+              <div className="text-[11px] font-medium text-faint mt-0.5">
                 Taichung
               </div>
             </div>
           </div>
 
           <div className="mb-5">
-            <div className="font-mono text-[10.5px] tracking-wide uppercase text-[#8B8D96]">
+            <div className="text-[10.5px] font-medium tracking-wide uppercase text-faint">
               Focused on
             </div>
-            <div className="text-[15px] mt-1 text-[#F5F3EE]">
+            <div className="text-[15px] mt-1 text-ink">
               Writing · Building · Podcasting
             </div>
           </div>
           <div className="mb-5">
-            <div className="font-mono text-[10.5px] tracking-wide uppercase text-[#8B8D96]">
+            <div className="text-[10.5px] font-medium tracking-wide uppercase text-faint">
               Companies
             </div>
-            <div className="text-[15px] mt-1 text-[#F5F3EE]">
+            <div className="text-[15px] mt-1 text-ink">
               Ryoka · Aegos Intel · Sorano
             </div>
           </div>
           <div>
-            <div className="font-mono text-[10.5px] tracking-wide uppercase text-[#8B8D96]">
+            <div className="text-[10.5px] font-medium tracking-wide uppercase text-faint">
               Say hello
             </div>
-            <a
+            
               href="mailto:hi@pieter.tw"
               className="text-[15px] mt-1 inline-block text-accent underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity"
             >
@@ -129,23 +129,23 @@ export default function AboutPage() {
 
         <div className="pass-stub relative w-full sm:w-[220px] p-8 flex flex-col justify-between border-t sm:border-t-0 sm:border-l border-dashed border-white/15">
           <div>
-            <div className="font-mono text-[10.5px] tracking-wide uppercase text-[#8B8D96]">
+            <div className="text-[10.5px] font-medium tracking-wide uppercase text-faint">
               Status
             </div>
-            <div className="flex items-center gap-2 mt-1 font-mono text-[11px] tracking-wide uppercase text-gold">
+            <div className="flex items-center gap-2 mt-1 text-[11px] font-medium tracking-wide uppercase text-gold">
               <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
               Still boarding
             </div>
 
-            <div className="font-mono text-[10.5px] tracking-wide uppercase text-[#8B8D96] mt-5">
+            <div className="text-[10.5px] font-medium tracking-wide uppercase text-faint mt-5">
               Departed
             </div>
-            <div className="text-[15px] mt-1 text-[#F5F3EE]">2006</div>
+            <div className="text-[15px] mt-1 text-ink">2006</div>
           </div>
 
           <div>
             <div className="barcode" />
-            <div className="font-mono text-[9.5px] text-[#8B8D96] mt-1.5 tracking-wide">
+            <div className="text-[9.5px] font-medium text-faint mt-1.5 tracking-wide">
               PIETER · BORREMANS · TPE
             </div>
           </div>

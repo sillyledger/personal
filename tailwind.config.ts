@@ -8,21 +8,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#F6F4EE",      // page background — cream
-        ink: "#17171A",     // primary text — near-black
-        muted: "#5C5B54",   // secondary text — darkened for legibility on cream
-        line: "#E4E1D8",    // hairline dividers, light
-        accent: "#B8873A",  // muted amber gold
-        gold: "#B8873A",
-        red: "#C23B3B",     // from the Taiwan flag, unchanged
+        bg: "#14151A",       // page background — near-black
+        card: "#1B1C22",     // card / surface background
+        border: "#2a2b32",   // hairline dividers, card borders
+        ink: "#F5F3EE",      // primary text — off-white
+        muted: "#9a9a9f",    // secondary text
+        faint: "#6f6f75",    // tertiary / caption text
+        accent: "#E8B923",   // gold
+        gold: "#E8B923",
+        red: "#C23B3B",      // from the Taiwan flag, unchanged
       },
       fontFamily: {
-        sans: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ['"Archivo"', "ui-sans-serif", "system-ui", "sans-serif"],
-        mono: ['"IBM Plex Mono"', "ui-monospace", "monospace"],
+        sans: ['"DM Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ['"DM Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
       },
       fontSize: {
-        body: ["20px", { lineHeight: "29px" }],
+        body: ["20px", { lineHeight: "35px" }],
       },
     },
   },

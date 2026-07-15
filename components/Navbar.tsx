@@ -31,7 +31,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="flex flex-wrap items-center justify-between gap-4 px-10 pt-8 font-mono text-[14px] font-medium tracking-wide text-[#44443F]">
+    <header className="flex flex-wrap items-center justify-between gap-4 px-10 pt-8 text-[14px] font-medium tracking-wide text-muted">
       <Link href="/" className="flex items-center gap-3.5 text-ink">
         <Image
           src="/pieter-borremans-living-in-taiwan.jpeg"
