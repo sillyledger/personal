@@ -72,11 +72,12 @@ export default async function JournalFeed() {
                 }}
               />
               <div className="absolute left-0 right-0 bottom-0 px-3.5 pb-3 pt-2.5">
-                <div className="flex items-center justify-between text-[10.5px] font-medium tracking-wide text-[#d8d8d8]">
-                  <span>BEL</span>
-                  <span>TPE</span>
+                <div className="relative h-3 flex items-center mb-1.5">
+                  <span className="w-full border-t border-dashed border-white/35" />
+                  <svg className="absolute left-1/2 -translate-x-1/2 w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                    <path d="M2 16L22 8L18 16L22 22L14 18L8 22L9 15L2 16Z" fill="#F5F3EE" />
+                  </svg>
                 </div>
-                <div className="border-t border-dashed border-white/35 mt-1 mb-1.5" />
                 {keywordFromCategory(post.category) && (
                   <div className="font-display font-bold text-[20px] tracking-tight text-ink">
                     {keywordFromCategory(post.category)}
