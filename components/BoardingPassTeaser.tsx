@@ -71,9 +71,7 @@ export default function BoardingPassTeaser() {
           <div>
             <div className="teaser-barcode" />
             
-              href="/about"
-              className="text-[10.5px] font-medium text-faint hover:text-accent transition-colors mt-2 inline-block tracking-wide"
-            >
+              <a href="/about" className="text-[10.5px] font-medium text-faint hover:text-accent transition-colors mt-2 inline-block tracking-wide">
               Full boarding pass →
             </a>
           </div>
