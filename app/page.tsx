@@ -13,9 +13,9 @@ export default function Home() {
       <Hero />
       <ServicesBar />
       <BoardingPassTeaser />
-      <AboutParagraph />
-      <PhotoStrip />
       <JournalFeed />
+      <PhotoStrip />
+      <AboutParagraph />
     </main>
   );
 }
