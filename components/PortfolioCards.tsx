@@ -1,4 +1,3 @@
-import Link from "next/link";
 const projects = [
   {
     name: "Sorano",
@@ -33,21 +32,14 @@ const projects = [
     tags: ["Holding", "Investing"],
   },
 ];
+
 export default function PortfolioCards() {
   return (
     <section className="py-16">
-      <p className="text-[11px] text-faint tracking-[0.09em] uppercase font-medium mb-5">
-        Portfolio
-      </p>
+      <p className="text-[11px] text-faint tracking-[0.09em] uppercase font-medium mb-5">Portfolio</p>
       <div className="grid grid-cols-2 gap-3">
         {projects.map((p) => (
-          
-            key={p.name}
-            href={p.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group bg-card border border-border rounded-[14px] p-6 flex flex-col hover:border-white/25 transition-colors"
-          >
+          <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer" className="group bg-card border border-border rounded-[14px] p-6 flex flex-col hover:border-white/25 transition-colors">
             <div className="flex items-start justify-between mb-2">
               <div>
                 <div className="flex items-center gap-2">
