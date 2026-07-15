@@ -6,12 +6,7 @@ export default function AboutParagraph() {
       </p>
       <p className="text-body text-ink">
         If you&apos;re here for the building side of things instead - the projects, the progress, the day-to-day - that lives on{" "}
-        
-          href="https://pieterborremans.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-accent underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity"
-        >
+        <a href="https://pieterborremans.com" target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity">
           my other journal
         </a>
         .
