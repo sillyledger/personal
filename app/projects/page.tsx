@@ -11,15 +11,15 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { flightNo: "RY-01", name: "Ryoka Group", url: "ryoka.xyz", gate: "Holding · Investing", status: "active", statusLabel: "On time", year: "2016" },
-  { flightNo: "SO-02", name: "Sorano", url: "sorano.space", gate: "SaaS · Indie", status: "active", statusLabel: "Active", year: "2024" },
-  { flightNo: "TD-03", name: "TWO Docs", url: "two.so", gate: "SaaS · B2B & B2C", status: "building", statusLabel: "Boarding", year: "2024" },
-  { flightNo: "AI-04", name: "Aegos Intel", url: "aegosintel.com", gate: "SaaS · B2B", status: "building", statusLabel: "In progress", year: "2025" },
-  { flightNo: "KI-05", name: "Kiroka", url: "subscription tracker", gate: "Free · Donation", status: "active", statusLabel: "Active", year: "2025" },
-  { flightNo: "HA-06", name: "Harova", url: "harova.xyz", gate: "Web Directory", status: "building", statusLabel: "Boarding", year: "2026" },
+  { flightNo: "RY-01", name: "Ryoka Group", url: "ryoka.xyz", gate: "Holding · Investing", status: "active", statusLabel: "On time", year: "2025" },
+  { flightNo: "SO-02", name: "Sorano", url: "sorano.space", gate: "SaaS · Indie", status: "active", statusLabel: "Active", year: "2026" },
+  { flightNo: "TD-03", name: "TWO Docs", url: "two.so", gate: "SaaS · B2B & B2C", status: "active", statusLabel: "Active", year: "2026" },
+  { flightNo: "AI-04", name: "Aegos Intel", url: "aegosintel.com", gate: "SaaS · B2B", status: "building", statusLabel: "In progress", year: "2026" },
+  { flightNo: "KI-05", name: "Kiroka", url: "subscription tracker", gate: "Free · Donation", status: "active", statusLabel: "Active", year: "2026" },
+  { flightNo: "HA-06", name: "Harova", url: "harova.xyz", gate: "Web Directory", status: "active", statusLabel: "Active", year: "2026" },
   { flightNo: "ER-07", name: "Echo Room", url: "solo podcast", gate: "Audio", status: "active", statusLabel: "On time", year: "2026" },
-  { flightNo: "??-08", name: "— add project —", url: "replace me", gate: "—", status: "idle", statusLabel: "TBA", year: "—" },
-  { flightNo: "??-09", name: "— add project —", url: "replace me", gate: "—", status: "idle", statusLabel: "TBA", year: "—" },
+  { flightNo: "LI-08", name: "Liyo", url: "liyo.dev", gate: "Free · Social", status: "building", statusLabel: "In progress", year: "2026" },
+  { flightNo: "IH-09", name: "Indie Hacker Blog", url: "indiehacker.blog", gate: "Media", status: "active", statusLabel: "Active", year: "2026" },
 ];
 
 const statusColors: Record<Status, string> = {
