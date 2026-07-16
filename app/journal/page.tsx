@@ -11,14 +11,19 @@ type Post = {
   featured_image: string | null;
 };
 
-async function getPosts(): Promise<Post[]> {
-  const { data, error } = await supabase
+async function getPosts(category?: string): Promise<Post[]> {
+  let query = supabase
     .from("posts")
     .select("slug, title, category, published_at, featured_image")
     .eq("target_site", "pieter.tw")
     .eq("status", "published")
     .order("published_at", { ascending: false });
 
+  if (category) {
+    query = query.eq("category", category);
+  }
+
+  const { data, error } = await query;
   if (error) {
     console.error("Failed to load posts:", error);
     return [];
@@ -39,8 +44,13 @@ function keywordFromCategory(category: string | null) {
   return category.split(" ")[0].toUpperCase();
 }
 
-export default async function JournalPage() {
-  const posts = await getPosts();
+export default async function JournalPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string }>;
+}) {
+  const { category } = await searchParams;
+  const posts = await getPosts(category);
 
   return (
     <main className="max-w-[900px] mx-auto px-10 pt-16 pb-24">
@@ -55,9 +65,25 @@ export default async function JournalPage() {
         culture, the day-to-day of being a foreigner in Taiwan.
       </p>
 
+      {category && (
+        <div className="mt-6 flex items-center gap-2 text-[13px] font-medium text-muted">
+          <span>
+            Filtering by <span className="text-ink">{category}</span>
+          </span>
+          <Link
+            href="/journal"
+            className="text-accent underline decoration-1 underline-offset-4 hover:opacity-70 transition-opacity"
+          >
+            Clear
+          </Link>
+        </div>
+      )}
+
       {posts.length === 0 && (
         <p className="text-[15px] text-muted py-8 mt-8">
-          No posts published yet — check back soon.
+          {category
+            ? `No posts in "${category}" yet — check back soon.`
+            : "No posts published yet — check back soon."}
         </p>
       )}
 
