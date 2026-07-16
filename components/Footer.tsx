@@ -86,7 +86,15 @@ export default function Footer() {
 
         <div className="mt-12 pt-5 border-t border-dashed border-white/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="font-mono text-xs text-faint">
-            © {new Date().getFullYear()} Pieter Borremans
+            © {new Date().getFullYear()}{" "}
+            <a
+              href="https://www.pieterborremans.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-ink transition-colors"
+            >
+              Pieter Borremans
+            </a>
           </p>
           <p className="font-mono text-xs text-faint">
             🇧🇪 🇬🇧 🇹🇼 TAICHUNG · LONDON
