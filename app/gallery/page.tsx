@@ -50,11 +50,17 @@ export default function GalleryPage() {
           {photos.length} / 36 EXP
         </span>
       </div>
-      <h1 className="font-display font-bold text-3xl text-ink mb-12 leading-tight">
+      <h1 className="font-display font-bold text-3xl text-ink mb-4 leading-tight">
         Nine stops,
         <br />
         unfiltered.
       </h1>
+      <p className="text-[11px] text-faint max-w-[480px] mb-12 leading-snug">
+        All photographs on this page are original works by Pieter Borremans
+        and are protected by copyright. No image may be copied, downloaded,
+        reproduced, or used in any form without prior written permission.
+        Unauthorized use may result in legal action.
+      </p>
       <div className="grid grid-cols-3 gap-4">
         {photos.map((photo, i) => (
           <figure
