@@ -63,38 +63,44 @@ export default function FlashcardsPage() {
         badly it went.
       </p>
 
-      <div className="mt-12 border border-border rounded-[14px] bg-card overflow-hidden">
-        <div className="hidden sm:grid grid-cols-[1fr_auto] gap-6 px-7 pt-5 pb-3 text-[10.5px] font-medium tracking-wide uppercase text-faint">
-          <span>Deck</span>
-          <span>Words</span>
-        </div>
-
-        {decks.map((deck, i) => (
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[18px]">
+        {decks.map((deck) => (
           <Link
             key={deck.href}
             href={deck.href}
-            className={`group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 px-7 py-6 hover:bg-gold/5 transition-colors ${
-              i < decks.length - 1 ? "border-b border-dashed border-border" : ""
-            }`}
+            className="group flex flex-col justify-between min-h-[230px] border border-border rounded-[14px] bg-card p-6 hover:border-gold/40 hover:-translate-y-1 transition-all"
           >
-            <div className="flex-1">
-              <div className="font-display font-bold text-[20px] tracking-tight text-ink group-hover:text-accent transition-colors">
+            <div>
+              <div className="font-display font-bold text-[21px] tracking-tight text-ink">
                 {deck.name}
               </div>
-              <div className="text-[13px] text-muted mt-0.5">
+              <div className="text-[12.5px] text-faint mt-1">
                 {deck.subtitle}
               </div>
-              <div className="flex flex-wrap items-center gap-2 mt-3">
+              <div className="flex flex-wrap gap-1.5 mt-4">
                 {deck.chips.map((chip) => (
                   <Chip key={chip.label} label={chip.label} variant={chip.variant} />
                 ))}
               </div>
             </div>
-            <div className="font-display font-bold text-[22px] tracking-tight text-ink sm:text-right">
-              {deck.count}
+
+            <div className="flex justify-between items-center border-t border-dashed border-border pt-4 mt-5">
+              <span className="text-[13px] text-muted">
+                <span className="text-ink font-bold">{deck.count}</span> words
+              </span>
+              <span className="text-faint group-hover:text-gold group-hover:translate-x-0.5 transition-all">
+                →
+              </span>
             </div>
           </Link>
         ))}
+
+        <div className="flex flex-col items-center justify-center text-center min-h-[230px] border border-dashed border-border rounded-[14px] p-6 text-faint">
+          <div className="text-[22px]">+</div>
+          <div className="text-[12.5px] mt-2 max-w-[160px]">
+            more decks land here as they come together
+          </div>
+        </div>
       </div>
 
       <p className={`${caveat.className} mt-8 text-[20px] text-faint max-w-[540px]`}>
