@@ -13,14 +13,14 @@ type Deck = {
 
 const decks: Deck[] = [
   {
-    href: "/flashcards/hsk1",
-    name: "HSK1",
-    subtitle: "The reference deck",
+    href: "/flashcards/basics",
+    name: "Basics",
+    subtitle: "Beginner words I've actually learned",
     chips: [
-      { label: "Ultra beginner", variant: "gold" },
-      { label: "Standard vocab", variant: "gold" },
+      { label: "Everyday words", variant: "gold" },
+      { label: "Survival Mandarin", variant: "gold" },
     ],
-    count: "150",
+    count: "15",
   },
   {
     href: "/flashcards/personal",
